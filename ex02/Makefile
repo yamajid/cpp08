@@ -5,13 +5,12 @@
 #                                                     +:+ +:+         +:+      #
 #    By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/03/13 01:55:46 by yamajid           #+#    #+#              #
-#    Updated: 2024/03/15 15:25:20 by yamajid          ###   ########.fr        #
+#    Created: 2024/03/15 02:07:14 by yamajid           #+#    #+#              #
+#    Updated: 2024/03/15 16:46:47 by yamajid          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-
-NAME 	=	EasyFind
+NAME 	=	MutantStack
 Run		=	c++ -g
 FLAGS	=	-Wall -Wextra -Werror -std=c++98
 RM		=	rm -f
@@ -24,7 +23,7 @@ all: $(NAME)
 %.o: %.cpp
 	$(Run) $(FLAGS) -c $< -o $@
 
-$(NAME): $(otherS) EasyFind.hpp
+$(NAME): $(otherS) MutantStack.hpp
 	$(Run) $(FLAGS) -o $(NAME) $(otherS)
 
 clean:
